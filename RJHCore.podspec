@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RJHCore'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of RJHCore.'
+  s.version          = '0.1.1'
+  s.summary          = '基本库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  测试这个pod是否成功
                        DESC
 
-  s.homepage         = 'https://github.com/阮景辉/RJHCore'
+  s.homepage         = 'https://github.com/ruanjinghui/RJHCore'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '阮景辉' => 'ruanjinghui@kding.com' }
-  s.source           = { :git => 'https://github.com/阮景辉/RJHCore.git', :tag => s.version.to_s }
+  s.author           = { 'ruanjinghui' => 'ruanjinghui@kding.com' }
+  s.source           = { :git => 'https://github.com/ruanjinghui/RJHCore.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RJHCore/Classes/**/*'
+  s.source_files = 'RJHCore/Classes/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'RJHCore' => ['RJHCore/Assets/*.png']

@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0654862E077EFA22FA69123E /* Pods_RJHCore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJHCore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EF2AB9725DBDC62605E6209 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0EF2AB9725DBDC62605E6209 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1B9079493D673DD655E1DD4C /* Pods-RJHCore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJHCore_Tests.release.xcconfig"; path = "Target Support Files/Pods-RJHCore_Tests/Pods-RJHCore_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		33CA700F84B789EB5515C296 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		33CA700F84B789EB5515C296 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RJHCore_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJHCore_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7C32C397CDCB509D28D1E24 /* Pods-RJHCore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJHCore_Example.debug.xcconfig"; path = "Target Support Files/Pods-RJHCore_Example/Pods-RJHCore_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D8275A13B6CA1E0BF885C351 /* Pods_RJHCore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJHCore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED9401EBEF2E643BD7F7397D /* RJHCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RJHCore.podspec; path = ../RJHCore.podspec; sourceTree = "<group>"; };
+		ED9401EBEF2E643BD7F7397D /* RJHCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RJHCore.podspec; path = ../RJHCore.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F32E1472A4851451351FFD72 /* Pods-RJHCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJHCore_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RJHCore_Tests/Pods-RJHCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3587B3EBCE710E66FC0882A /* Pods-RJHCore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJHCore_Example.release.xcconfig"; path = "Target Support Files/Pods-RJHCore_Example/Pods-RJHCore_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				F32E1472A4851451351FFD72 /* Pods-RJHCore_Tests.debug.xcconfig */,
 				1B9079493D673DD655E1DD4C /* Pods-RJHCore_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "阮景辉";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = YF4JWU9F99;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +497,7 @@
 			baseConfigurationReference = A7C32C397CDCB509D28D1E24 /* Pods-RJHCore_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YF4JWU9F99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RJHCore/RJHCore-Prefix.pch";
 				INFOPLIST_FILE = "RJHCore/RJHCore-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = F3587B3EBCE710E66FC0882A /* Pods-RJHCore_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YF4JWU9F99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RJHCore/RJHCore-Prefix.pch";
 				INFOPLIST_FILE = "RJHCore/RJHCore-Info.plist";

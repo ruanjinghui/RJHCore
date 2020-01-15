@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'RJHCore_Example' do
+  pod 'RJHCore', :path => '../'
+
+  target 'RJHCore_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
